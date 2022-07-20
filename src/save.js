@@ -1,13 +1,22 @@
 import { __ } from '@wordpress/i18n';
-import { useBlockProps } from '@wordpress/block-editor';
+import { useBlockProps, RichText } from '@wordpress/block-editor';
+import classnames from 'classnames';
 
-export default function save() {
+export default function save( { attributes } ) {
+	const { text, textAlignment, shadow, shadowOpacity } = attributes;
+
+	const classes = classnames( `text-box-align-${ textAlignment }`, {
+		'has-shadow': shadow,
+		[ `shadow-opacity-${ shadowOpacity }` ]: shadow && shadowOpacity,
+	} );
+
 	return (
-		<p { ...useBlockProps.save() }>
-			{ __(
-				'Boilerplate – hello from the saved content!',
-				'boilerplate'
-			) }
-		</p>
+		<RichText.Content
+			{ ...useBlockProps.save( {
+				className: classes,
+			} ) }
+			tagName="p"
+			value={ text }
+		/>
 	);
 }

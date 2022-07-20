@@ -7,10 +7,76 @@
 	"description": "A box of text.",
 	"keywords": [ "text", "paragraph", "box" ],
 	"supports": {
-		"html": false
+		"html": false,
+		"color": {
+			"background": true,
+			"color": true,
+			"gradients": true
+		},
+		"spacing": true
+	},
+	"styles": [
+		{
+			"name": "squared",
+			"label": "Squared",
+			"isDefault": true
+		},
+		{
+			"name": "rounded",
+			"label": "Rounded"
+		}
+	],
+	"example": {
+		"attributes": {
+			"text": "This is some Text!",
+			"gradient": "red-to-blue",
+			"shadow": true
+		}
 	},
 	"textdomain": "text-box",
 	"editorScript": "file:./build/index.js",
 	"editorStyle": "file:./build/index.css",
-	"style": "file:./build/style-index.css"
+	"style": "file:./build/style-index.css",
+	"attributes": {
+		"text": {
+			"type": "string",
+			"source": "html",
+			"selector": "p"
+		},
+		"textAlignment": {
+			"type": "string",
+			"default": "left"
+		},
+		"backgroundColor": {
+			"type": "string"
+		},
+		"textColor": {
+			"type": "string",
+			"default": "very-light-gray"
+		},
+		"shadow": {
+			"type": "boolean",
+			"default": false
+		},
+		"shadowOpacity": {
+			"type": "number",
+			"default": 30
+		},
+		"style": {
+			"type": "object",
+			"default": {
+				"color": {
+					"background": "#f03"
+				},
+				"spacing": {
+					"padding": {
+						"top": "50px",
+						"right": "30px",
+						"left": "30px",
+						"bottom": "50px"
+					}
+				}
+			}
+		}
+	}
 }

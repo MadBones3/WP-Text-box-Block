@@ -5,4 +5,12 @@
   border: 1px dotted #f00;
 }
 
+.text-box-title {
+  margin: 0;
+}
+
+.editor-styles-wrapper {
+  font-family: inherit;
+}
+
 /*# sourceMappingURL=index.css.map*/
