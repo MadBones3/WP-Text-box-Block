@@ -1,5 +1,5 @@
 ﻿# WP-Gutenburg-block
 
-## Text Block
+## Text Block Preview
 
-![alt text](https://github.com/MadBones3/WP-Gutenburg-block-boilerplate/tree/master/text-block-screenshot.png?raw=true)
+![Banner preview](https://github.com/MadBones3/WP-Gutenburg-block-boilerplate/blob/master/img/text-block-screenshot.png)
