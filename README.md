@@ -2,4 +2,4 @@
 
 ## Text Block
 
-<p align="center"><img src="./text-block-screenshot.png" width="1000px" /></p>
+![alt text](https://github.com/MadBones3/WP-Gutenburg-block-boilerplate/tree/master/text-block-screenshot.png?raw=true)
