@@ -7,5 +7,8 @@
 ### Install
 
 <p>Add to plugins folder</p>
+
+### Edit
+
 <p>npm install - the node modules</p>
 <p>npm run start - to create Build folder/ to compile</p>
